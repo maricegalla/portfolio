@@ -1,11 +1,12 @@
 import React from 'react';
 import {
   ContentContainer,
-  HabilitiesContainer,
+  EducationContainer,
   LineContainer,
   MainTextContainer,
 } from './style';
-import myPicture from '../../assets/myPicture.jpg';
+import Habilities from './Habilities';
+import { education } from 'src/assets/education.js';
 
 const Content = () => {
   return (
@@ -22,32 +23,24 @@ const Content = () => {
             meu redor. Apaixonada por design, programação e tecnologia.
           </p>
         </div>
-        <div>
-          <img src={myPicture} alt="Me" />
-        </div>
+        <div className="image" />
       </MainTextContainer>
       <LineContainer />
-      <HabilitiesContainer>
-        <h1>HABILIDADES</h1>
-        <div>
-          <i class="devicon-html5-plain colored" />
-          <i class="devicon-css3-plain colored" />
-          <i class="devicon-javascript-plain colored" />
-          <i class="devicon-typescript-plain colored" />
-          <i class="devicon-bootstrap-plain colored"/>
-          <i class="devicon-bulma-plain colored"/>
-          <i class="devicon-react-original colored" />
-          <i class="devicon-redux-original colored" />
-          <i class="devicon-nodejs-plain colored" />
-          <i class="devicon-express-original" />
-          <i class="devicon-socketio-plain"/>
-          <i class="devicon-mysql-plain-wordmark colored" />
-          <i class="devicon-mongodb-plain-wordmark colored"/>
-          <i class="devicon-jest-plain colored" />
-          <i class="devicon-github-plain"/>
-          <i class="devicon-python-plain colored"></i>
-        </div>
-      </HabilitiesContainer>
+      <Habilities />
+      <LineContainer />
+      <EducationContainer>
+        <h1>FORMAÇÃO</h1>
+        {education.map((e) => (
+          <div className="line">
+            <img src={e.image} alt="institution" />
+            <div className="column">
+              <p className="small">{e.year}</p>
+              <p className="paragraph">{e.course}</p>
+              <p className="small">{e.institution}</p>
+            </div>
+          </div>
+        ))}
+      </EducationContainer>
     </ContentContainer>
   );
 };

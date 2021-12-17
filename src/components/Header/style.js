@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  background-color: #acc9f4;
+  background-color: #61dafb;
+  background-image: linear-gradient(0deg, #61dafb 0%, #5b7ee0 100%);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  color: #5b7ee0;
   width: 100%;
   height: 100px;
   align-items: center;
@@ -14,7 +14,7 @@ const HeaderContainer = styled.header`
   position: fixed;
 
   a {
-    color: #5b7ee0;
+    color: #4264c7;
   }
 
   div {
