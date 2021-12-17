@@ -2,7 +2,8 @@ import React from 'react';
 import { HeaderContainer } from './style';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { VscGithub } from 'react-icons/vsc';
-import { IoIosMail } from 'react-icons/io';
+import { IoIosMail  } from 'react-icons/io';
+import { IoLogoWhatsapp } from "react-icons/io5";
 import NavBar from './Navbar'
 
 const Header = () => {
@@ -29,6 +30,13 @@ const Header = () => {
           rel="noreferrer"
         >
           <IoIosMail size={'3em'} />
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5511981745895&text=Contato%20Portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <IoLogoWhatsapp size={'3em'} />
         </a>
       </div>
       <NavBar/>
