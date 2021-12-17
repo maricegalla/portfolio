@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dac8b6c4.chunk.css",
-    "main.js": "/portfolio/static/js/main.92533919.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.92533919.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.2cfd52c4.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2cfd52c4.js.map",
-    "static/js/2.556fcfac.chunk.js": "/portfolio/static/js/2.556fcfac.chunk.js",
-    "static/js/2.556fcfac.chunk.js.map": "/portfolio/static/js/2.556fcfac.chunk.js.map",
-    "static/js/3.139e5266.chunk.js": "/portfolio/static/js/3.139e5266.chunk.js",
-    "static/js/3.139e5266.chunk.js.map": "/portfolio/static/js/3.139e5266.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.423c8972.chunk.css",
+    "main.js": "/portfolio/static/js/main.a4537eb1.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a4537eb1.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.d39f5c4b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.d39f5c4b.js.map",
+    "static/js/2.97583428.chunk.js": "/portfolio/static/js/2.97583428.chunk.js",
+    "static/js/2.97583428.chunk.js.map": "/portfolio/static/js/2.97583428.chunk.js.map",
+    "static/js/3.a3055676.chunk.js": "/portfolio/static/js/3.a3055676.chunk.js",
+    "static/js/3.a3055676.chunk.js.map": "/portfolio/static/js/3.a3055676.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.dac8b6c4.chunk.css.map": "/portfolio/static/css/main.dac8b6c4.chunk.css.map",
-    "static/js/2.556fcfac.chunk.js.LICENSE.txt": "/portfolio/static/js/2.556fcfac.chunk.js.LICENSE.txt",
+    "static/css/main.423c8972.chunk.css.map": "/portfolio/static/css/main.423c8972.chunk.css.map",
+    "static/js/2.97583428.chunk.js.LICENSE.txt": "/portfolio/static/js/2.97583428.chunk.js.LICENSE.txt",
     "static/media/discordLogo.d437d824.png": "/portfolio/static/media/discordLogo.d437d824.png",
     "static/media/mackenzieLogo.db22c187.jpg": "/portfolio/static/media/mackenzieLogo.db22c187.jpg",
     "static/media/mondayLogo.06cf42d0.png": "/portfolio/static/media/mondayLogo.06cf42d0.png",
@@ -21,9 +21,9 @@
     "static/media/trelloLogo.6e9db7c4.png": "/portfolio/static/media/trelloLogo.6e9db7c4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2cfd52c4.js",
-    "static/js/2.556fcfac.chunk.js",
-    "static/css/main.dac8b6c4.chunk.css",
-    "static/js/main.92533919.chunk.js"
+    "static/js/runtime-main.d39f5c4b.js",
+    "static/js/2.97583428.chunk.js",
+    "static/css/main.423c8972.chunk.css",
+    "static/js/main.a4537eb1.chunk.js"
   ]
 }
