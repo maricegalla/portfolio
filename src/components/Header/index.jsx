@@ -3,6 +3,7 @@ import { HeaderContainer } from './style';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { VscGithub } from 'react-icons/vsc';
 import { IoIosMail } from 'react-icons/io';
+import NavBar from './Navbar'
 
 const Header = () => {
   return (
@@ -30,6 +31,7 @@ const Header = () => {
           <IoIosMail size={'3em'} />
         </a>
       </div>
+      <NavBar/>
     </HeaderContainer>
   );
 };

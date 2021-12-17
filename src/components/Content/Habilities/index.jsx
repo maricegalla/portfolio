@@ -12,7 +12,7 @@ import trelloLogo from 'src/assets/trelloLogo.png';
 
 const Habilities = () => {
   return (
-    <HabilitiesContainer>
+    <HabilitiesContainer >
       <h1>HABILIDADES</h1>
       <div>
         <i class="devicon-html5-plain colored" />

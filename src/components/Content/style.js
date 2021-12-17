@@ -18,7 +18,7 @@ const MainTextContainer = styled.div`
   align-items: center;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  gap: 30px;
+  gap: 100px;
   padding: 20px;
   width: fit-content;
   height: fit-content;
@@ -56,19 +56,26 @@ const MainTextContainer = styled.div`
   .image {
     height: 300px;
     width: 300px;
-    background-image: linear-gradient(
+    background-image: url(${myPicture}),
+      linear-gradient(to bottom right, #61dafb, #5b7ee0, #4264C7);
+
+    /* background-image: linear-gradient(
         to bottom,
         rgba(225, 225, 225, 0),
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.7)
       ),
-      url(${myPicture});
-    border-radius: 50%;
+      url(${myPicture}); */
+
+    border-radius: 50% 50% 10% 50% ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border: none;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: 6px solid transparent;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -95,7 +102,7 @@ const EducationContainer = styled.div`
   }
 
   img {
-    height: 100px
+    height: 100px;
   }
 
   .paragraph {
@@ -124,7 +131,7 @@ const EducationContainer = styled.div`
     display: flex;
     flex-direction: line;
     align-items: center;
-    gap: 40px
+    gap: 40px;
   }
 `;
 

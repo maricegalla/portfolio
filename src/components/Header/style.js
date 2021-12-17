@@ -10,7 +10,7 @@ const HeaderContainer = styled.header`
   width: 100%;
   height: 100px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   position: fixed;
 
   a {
