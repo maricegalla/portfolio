@@ -14,7 +14,7 @@ const NavBarContainer = styled.div`
     padding: 0;
     border: none;
     background: none;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
     color: #4264c7;
     font-weight: bold;
