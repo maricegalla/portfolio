@@ -18,7 +18,7 @@ const MainTextContainer = styled.div`
   align-items: center;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  gap: 100px;
+  gap: 60px;
   padding: 20px;
   width: fit-content;
   height: fit-content;
@@ -58,16 +58,6 @@ const MainTextContainer = styled.div`
     width: 300px;
     background-image: url(${myPicture}),
       linear-gradient(to bottom right, #61dafb, #5b7ee0, #4264C7);
-
-    /* background-image: linear-gradient(
-        to bottom,
-        rgba(225, 225, 225, 0),
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url(${myPicture}); */
-
     border-radius: 50% 50% 10% 50% ;
     background-size: cover;
     background-repeat: no-repeat;

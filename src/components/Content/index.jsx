@@ -23,7 +23,9 @@ const Content = () => {
             meu redor. Apaixonada por design, programação e tecnologia.
           </p>
         </div>
-        <div className="image" />
+        <div>
+          <div className="image" />
+        </div>
       </MainTextContainer>
       <LineContainer />
       <Habilities />
