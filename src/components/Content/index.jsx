@@ -15,6 +15,7 @@ const Content = () => {
 
   return (
     <ContentContainer>
+      
       <MainTextContainer>
         <div className="order">
           <div className="image" />

@@ -10,6 +10,7 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: -2;
 `;
 
 const MainTextContainer = styled.div`
@@ -64,7 +65,21 @@ const MainTextContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 90%;
+    gap: 20px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      width: fit-content;
+      align-items: center;
+    }
+
+    .image {
+      width: 200px;
+      height: 200px;
+    }
   }
 `;
 
@@ -72,6 +87,10 @@ const LineContainer = styled.div`
   border-top: 2px solid #5b7ee0;
   width: 60%;
   margin: 50px;
+
+  @media (max-width: 800px) {
+    margin: 20px;
+  }
 `;
 
 const EducationContainer = styled.div`
@@ -121,6 +140,33 @@ const EducationContainer = styled.div`
     flex-direction: line;
     align-items: center;
     gap: 40px;
+  }
+
+  @media (max-width: 800px) {
+    width: 90%;
+    gap: 20px;
+    margin: 0;
+
+    h1 {
+      transform: scale(0.7);
+    }
+
+    img {
+      height: 80px;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .line {
+      gap: 20px;
+      width: 100%;
+    }
+
+    .paragraph {
+      font-size: 18px;
+    }
   }
 `;
 

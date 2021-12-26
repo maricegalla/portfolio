@@ -38,6 +38,23 @@ const HabilitiesContainer = styled.div`
       transition: transform 0.5s ease-in-out;
     }
   }
+
+  @media (max-width: 800px) {
+    width: 90%;
+    gap: 20px;
+
+    h1 {
+      transform: scale(0.7);
+    }
+
+    & > div {
+      gap: 30px;
+      font-size: 50px;
+      & > img {
+        height: 50px;
+      }
+    }
+  }
 `;
 
 export { HabilitiesContainer };

@@ -12,6 +12,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-around;
   position: fixed;
+  z-index: 1;
 
   a {
     color: #4264c7;
@@ -20,6 +21,20 @@ const HeaderContainer = styled.header`
   div {
     display: flex;
     gap: 32px;
+  }
+
+  @media (max-width: 800px) {
+
+    div {
+      gap: 0;
+    }
+
+  
+    .container {
+      gap: 0;
+      width: 80%;
+      justify-content: space-between
+    }
   }
 `;
 
