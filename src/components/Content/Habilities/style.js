@@ -53,6 +53,13 @@ const HabilitiesContainer = styled.div`
       & > img {
         height: 50px;
       }
+      & > img:hover {
+        transform: none;
+      }
+
+      & > i:hover {
+        transform: none;
+      }
     }
   }
 `;

@@ -11,6 +11,10 @@ const ContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: -2;
+
+  @media (max-width: 800px) {
+    padding-top: 110px;
+  }
 `;
 
 const MainTextContainer = styled.div`
