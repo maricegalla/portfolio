@@ -7,14 +7,20 @@ import {
 } from './style';
 import Habilities from './Habilities';
 import { education } from 'src/assets/education.js';
+import useViewport from 'src/hooks/useViewport';
+import Name from 'src/components/Name'
 
 const Content = () => {
+  const { width } = useViewport();
+
   return (
     <ContentContainer>
       <MainTextContainer>
+        <div className="order">
+          <div className="image" />
+        </div>
         <div>
-          <h1>Marília</h1>
-          <h2>Cegalla Aldrighi</h2>
+          {width > 800 ?<Name /> : ''}
           <span>Desenvolvedora Full-Stack Jr</span>
           <p>
             Graduada em Engenheira Mecânica e MBA em Gestão Empresarial.
@@ -22,9 +28,6 @@ const Content = () => {
             persistente, determinada e busco sempre colaborar com as pessoas ao
             meu redor. Apaixonada por design, programação e tecnologia.
           </p>
-        </div>
-        <div>
-          <div className="image" />
         </div>
       </MainTextContainer>
       <LineContainer />

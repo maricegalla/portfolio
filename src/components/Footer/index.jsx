@@ -1,15 +1,19 @@
 import React from 'react';
-import { MdKeyboardArrowUp } from 'react-icons/md';
-import { FooterContainer, BackToTop } from './style';
+import { FooterContainer } from './style';
+import SocialMedia from 'src/components/SocialMedia';
+import TopButton from 'src/components/TopButton';
+import useViewport from 'src/hooks/useViewport';
 
 const Footer = () => {
+  const { width } = useViewport();
+
   return (
     <FooterContainer>
-      <p>© 2021 By Marília Cegalla Aldrighi</p>
-      <BackToTop onClick={() => window.scrollTo(0, 0)}>
-        <p>Voltar ao Topo</p>
-        <MdKeyboardArrowUp />
-      </BackToTop>
+      {width <= 800 ? <SocialMedia /> : ''}
+      <div>
+        <p>© 2021 By Marília Cegalla Aldrighi</p>
+        {width > 800 ? <TopButton /> : ''}
+      </div>
     </FooterContainer>
   );
 };

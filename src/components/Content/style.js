@@ -30,16 +30,6 @@ const MainTextContainer = styled.div`
     width: min-content;
     align-items: center;
 
-    h1 {
-      font-size: 95px;
-      margin: 0;
-    }
-
-    h2 {
-      font-size: 40px;
-      margin: 0;
-    }
-
     span {
       color: #5b7ee0;
       font-weight: 700;
@@ -53,12 +43,13 @@ const MainTextContainer = styled.div`
       font-family: 'Nunito', sans-serif;
     }
   }
+
   .image {
     height: 300px;
     width: 300px;
     background-image: url(${myPicture}),
-      linear-gradient(to bottom right, #61dafb, #5b7ee0, #4264C7);
-    border-radius: 50% 50% 10% 50% ;
+      linear-gradient(to bottom right, #61dafb, #5b7ee0, #4264c7);
+    border-radius: 50% 50% 10% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -66,6 +57,14 @@ const MainTextContainer = styled.div`
     background-clip: content-box, border-box;
     border: 6px solid transparent;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
   }
 `;
 

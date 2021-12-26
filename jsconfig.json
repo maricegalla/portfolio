@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@/*":["src/*"],
-    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "typeAcquisition": {
-    "exclude": [ "dotenv" ]
-  }
+  "include": ["src"]
 }

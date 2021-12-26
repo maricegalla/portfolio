@@ -13,25 +13,32 @@ const FooterContainer = styled.footer`
   font-family: 'Nunito', sans-serif;
   width: 100%;
   height: 80px;
-  align-items: center;
-  justify-content: space-around;
+
+  & > div {
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    height: 100px;
+
+    & > div {
+      display: flex;
+      flex-direction: line;
+      align-content: center;
+      gap: 20px;
+      width: fit-content;
+    }
+  }
 `;
 
-const BackToTop = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #4264c7;
-  border-radius: 24px;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  font-family: 'Nunito', sans-serif;
-  padding: 0 20px;
-  gap: 8px;
-  text-align: center;
-  text-decoration: none;
-`;
-
-export { FooterContainer, BackToTop };
+export { FooterContainer };
