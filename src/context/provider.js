@@ -7,36 +7,26 @@ function Provider({ children }) {
 
   const handleWindowResize = () => {
     setWidth(window.innerWidth);
-  }
+  };
 
   const goToTop = useCallback(() => {
-    return(
-      window.onbeforeunload = () => {
-        window.scrollTo(0, 0);
-      }
-    )
-  },[])
-
-  useEffect(() => {
-    return(
-      goToTop()
-    )
-  }, [goToTop])
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
-  
+
+  useEffect(() => {
+    return goToTop();
+  }, [goToTop]);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
+  }, []);
+
   const contextValue = {
     width,
   };
 
-  return (
-    <Context.Provider value={contextValue}>
-      {children}
-    </Context.Provider>
-  );
+  return <Context.Provider value={contextValue}>{children}</Context.Provider>;
 }
 
 Provider.propTypes = {

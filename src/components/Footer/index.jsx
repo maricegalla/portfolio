@@ -11,7 +11,7 @@ const Footer = () => {
     <FooterContainer>
       {width <= 800 ? <SocialMedia /> : ''}
       <div>
-        <p>© 2021 By Marília Cegalla Aldrighi</p>
+        <p>Idealizado e criado por Marília Cegalla Aldrighi</p>
         {width > 800 ? <TopButton /> : ''}
       </div>
     </FooterContainer>
