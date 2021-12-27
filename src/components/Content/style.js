@@ -174,6 +174,8 @@ const EducationContainer = styled.div`
   }
 `;
 
+
+
 export {
   ContentContainer,
   MainTextContainer,

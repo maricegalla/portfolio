@@ -15,27 +15,27 @@ const Habilities = () => {
     <HabilitiesContainer >
       <h1>HABILIDADES</h1>
       <div>
-        <i class="devicon-html5-plain colored" />
-        <i class="devicon-css3-plain colored" />
-        <i class="devicon-javascript-plain colored" />
-        <i class="devicon-typescript-plain colored" />
-        <i class="devicon-bootstrap-plain colored" />
-        <i class="devicon-bulma-plain colored" />
+        <i className="devicon-html5-plain colored" />
+        <i className="devicon-css3-plain colored" />
+        <i className="devicon-javascript-plain colored" />
+        <i className="devicon-typescript-plain colored" />
+        <i className="devicon-bootstrap-plain colored" />
+        <i className="devicon-bulma-plain colored" />
         <img src={styledLogo} alt="styled" />
-        <i class="devicon-react-original colored" />
-        <i class="devicon-redux-original colored" />
-        <i class="devicon-nodejs-plain colored" />
-        <i class="devicon-express-original" />
-        <i class="devicon-socketio-plain" />
-        <i class="devicon-mysql-plain-wordmark colored" />
-        <i class="devicon-mongodb-plain-wordmark colored" />
-        <i class="devicon-jest-plain colored" />
-        <i class="devicon-mocha-plain colored" />
+        <i className="devicon-react-original colored" />
+        <i className="devicon-redux-original colored" />
+        <i className="devicon-nodejs-plain colored" />
+        <i className="devicon-express-original" />
+        <i className="devicon-socketio-plain" />
+        <i className="devicon-mysql-plain-wordmark colored" />
+        <i className="devicon-mongodb-plain-wordmark colored" />
+        <i className="devicon-jest-plain colored" />
+        <i className="devicon-mocha-plain colored" />
         <img src={rtlLogo} alt="rtl" />
-        <i class="devicon-python-plain colored" />
+        <i className="devicon-python-plain colored" />
         <img src={figmaLogo} alt="figma" />
-        <i class="devicon-github-plain" />
-        <i class="devicon-markdown-original" />
+        <i className="devicon-github-plain" />
+        <i className="devicon-markdown-original" />
         <img src={powerBiLogo} alt="powerBi" />
         <img src={tableauLogo} alt="tableau" />
         <img src={slackLogo} alt="slack" />

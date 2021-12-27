@@ -24,16 +24,14 @@ const HeaderContainer = styled.header`
   }
 
   @media (max-width: 800px) {
-
     div {
       gap: 0;
     }
 
-  
     .container {
       gap: 0;
       width: 80%;
-      justify-content: space-between
+      justify-content: space-between;
     }
   }
 `;

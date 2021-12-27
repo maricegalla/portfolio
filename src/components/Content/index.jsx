@@ -35,8 +35,8 @@ const Content = () => {
       <LineContainer />
       <EducationContainer>
         <h1>FORMAÇÃO</h1>
-        {education.map((e) => (
-          <div className="line">
+        {education.map((e, index) => (
+          <div className="line" key={index}>
             <img src={e.image} alt="institution" />
             <div className="column">
               <p className="small">{e.year}</p>

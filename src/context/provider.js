@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import { node } from 'prop-types';
 import Context from './context';
 
@@ -9,7 +9,21 @@ function Provider({ children }) {
     setWidth(window.innerWidth);
   }
 
-  React.useEffect(() => {
+  const goToTop = useCallback(() => {
+    return(
+      window.onbeforeunload = () => {
+        window.scrollTo(0, 0);
+      }
+    )
+  },[])
+
+  useEffect(() => {
+    return(
+      goToTop()
+    )
+  }, [goToTop])
+
+  useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
