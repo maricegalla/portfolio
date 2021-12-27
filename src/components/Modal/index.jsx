@@ -15,6 +15,9 @@ const Modal = ({ display, onClick }) => {
         <button className="nav btn" id="closeBtn" onClick={onClick}>
           <IoCloseCircle size={'2em'} />
         </button>
+        <button onClick={() => goTo(0, 0)} className="nav">
+          Início
+        </button>
         <button onClick={() => goTo(0, 490)} className="nav">
           Habilidades
         </button>
