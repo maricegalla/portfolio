@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dc6325a4.chunk.css",
-    "main.js": "/portfolio/static/js/main.da05ce37.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.da05ce37.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.f6e79c41.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f6e79c41.js.map",
-    "static/js/2.98c411c7.chunk.js": "/portfolio/static/js/2.98c411c7.chunk.js",
-    "static/js/2.98c411c7.chunk.js.map": "/portfolio/static/js/2.98c411c7.chunk.js.map",
-    "static/js/3.3de33059.chunk.js": "/portfolio/static/js/3.3de33059.chunk.js",
-    "static/js/3.3de33059.chunk.js.map": "/portfolio/static/js/3.3de33059.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.00ca473d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.00ca473d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.a5c16c03.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a5c16c03.js.map",
+    "static/js/2.e837c890.chunk.js": "/portfolio/static/js/2.e837c890.chunk.js",
+    "static/js/2.e837c890.chunk.js.map": "/portfolio/static/js/2.e837c890.chunk.js.map",
+    "static/js/3.2d258d16.chunk.js": "/portfolio/static/js/3.2d258d16.chunk.js",
+    "static/js/3.2d258d16.chunk.js.map": "/portfolio/static/js/3.2d258d16.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.dc6325a4.chunk.css.map": "/portfolio/static/css/main.dc6325a4.chunk.css.map",
-    "static/js/2.98c411c7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.98c411c7.chunk.js.LICENSE.txt",
+    "static/js/2.e837c890.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e837c890.chunk.js.LICENSE.txt",
     "static/media/discordLogo.d437d824.png": "/portfolio/static/media/discordLogo.d437d824.png",
     "static/media/mackenzieLogo.db22c187.jpg": "/portfolio/static/media/mackenzieLogo.db22c187.jpg",
     "static/media/mondayLogo.06cf42d0.png": "/portfolio/static/media/mondayLogo.06cf42d0.png",
@@ -21,9 +21,9 @@
     "static/media/trelloLogo.6e9db7c4.png": "/portfolio/static/media/trelloLogo.6e9db7c4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f6e79c41.js",
-    "static/js/2.98c411c7.chunk.js",
+    "static/js/runtime-main.a5c16c03.js",
+    "static/js/2.e837c890.chunk.js",
     "static/css/main.dc6325a4.chunk.css",
-    "static/js/main.da05ce37.chunk.js"
+    "static/js/main.00ca473d.chunk.js"
   ]
 }
