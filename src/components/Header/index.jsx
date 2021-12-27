@@ -13,10 +13,14 @@ const Header = () => {
 
   const openModal = () => {
     setIsOpen(true);
+    const noScroll = require('no-scroll');
+    noScroll.on()
   };
 
   const closeModal = () => {
     setIsOpen(false);
+    const noScroll = require('no-scroll');
+    noScroll.off()
   };
 
   return (
@@ -26,7 +30,7 @@ const Header = () => {
       {width <= 800 ? (
         <div className="container">
           <Name />
-          <HamburguerMenu onClick={() => openModal()} />
+          <HamburguerMenu onClick={() => openModal()}/>
           <Modal
             display={isOpen ? 'flex' : 'none'}
             onClick={() => closeModal()}
