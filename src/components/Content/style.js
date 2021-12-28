@@ -174,11 +174,87 @@ const EducationContainer = styled.div`
   }
 `;
 
+const ExperienceContainer = styled.div`
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 100px 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 
+  & > h1 {
+    margin: 0;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  .paragraph {
+    margin: 0;
+    text-align: justify;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+
+  .small {
+    margin: 0;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    gap: 40px;
+  }
+
+  @media (max-width: 800px) {
+    width: 90%;
+    gap: 20px;
+    margin: 0;
+
+    h1 {
+      transform: scale(0.7);
+    }
+
+    img {
+      height: 80px;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .line {
+      gap: 20px;
+      width: 100%;
+    }
+
+    .paragraph {
+      font-size: 18px;
+    }
+  }
+`;
 
 export {
   ContentContainer,
   MainTextContainer,
   LineContainer,
   EducationContainer,
+  ExperienceContainer,
 };

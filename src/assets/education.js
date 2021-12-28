@@ -3,7 +3,7 @@ import dhLogo from 'src/assets/dhLogo.jpeg'
 import fgvLogo from 'src/assets/fgvLogo.jpeg'
 import mackenzieLogo from 'src/assets/mackenzieLogo.jpg'
 
-const education = [
+export const education = [
   {
     year: '2021 - 2022',
     course: 'Desenvolvimento Web',
@@ -29,5 +29,3 @@ const education = [
     image: mackenzieLogo
   },
 ];
-
-export { education };
