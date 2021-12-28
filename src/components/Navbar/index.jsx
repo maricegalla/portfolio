@@ -8,7 +8,7 @@ const NavBar = () => {
       <p>|</p>
       <button onClick={() => window.scrollTo(0, 1050)} className="nav">Formação</button>
       <p>|</p>
-      <button onClick={() => window.scrollTo(0, 1770)} className="nav">Experiências</button>
+      <button onClick={() => window.scrollTo(0, 1780)} className="nav">Experiências</button>
     </NavBarContainer>
   );
 };

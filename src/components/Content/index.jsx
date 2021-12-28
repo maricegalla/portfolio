@@ -2,13 +2,12 @@ import React from 'react';
 import {
   ContentContainer,
   EducationContainer,
-  ExperienceContainer,
   LineContainer,
   MainTextContainer,
 } from './style';
 import Habilities from './Habilities';
+import Experiences from './Experiences';
 import { education } from 'src/assets/education.js';
-import { experience } from 'src/assets/experience.js';
 import useViewport from 'src/hooks/useViewport';
 import Name from 'src/components/Name';
 
@@ -49,18 +48,7 @@ const Content = () => {
         ))}
       </EducationContainer>
       <LineContainer />
-      <ExperienceContainer>
-        <h1>EXPERIÊNCIAS</h1>
-        {experience.map((e, index) => (
-          <div className="line" key={index}>
-            <div className="column">
-              <p className="small">{e.year}</p>
-              <p className="paragraph">{e.company}</p>
-              <p className="small">{e.position}</p>
-            </div>
-          </div>
-        ))}
-      </ExperienceContainer>
+      <Experiences />
     </ContentContainer>
   );
 };
