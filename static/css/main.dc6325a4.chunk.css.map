@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACE,SAAS,CACT,QAAQ,CACR,uBAAuB,CACvB,eAAe,CACf,QAAQ,CACR,UACA","file":"main.dc6325a4.chunk.css","sourcesContent":["* {\n  padding:0;\n  margin:0;\n  vertical-align:baseline;\n  list-style:none;\n  border:0;\n  width: auto;\n  }"]}
