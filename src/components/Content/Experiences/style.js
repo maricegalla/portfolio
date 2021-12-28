@@ -16,7 +16,6 @@ const ExperienceContainer = styled.div`
     text-align: center;
   }
 
-  
   .vertical-timeline-element-title {
     color: #4264c7;
     font-weight: 700;
@@ -43,65 +42,29 @@ const ExperienceContainer = styled.div`
     background-size: cover;
   }
 
-  //   img {
-  //     height: 100px;
-  //   }
+  .workIcon {
+    top: 20px;
+  }
 
-  //   .paragraph {
-  //     margin: 0;
-  //     text-align: justify;
-  //     font-size: 24px;
-  //     font-family: 'Nunito', sans-serif;
-  //     font-weight: 700;
-  //   }
+  @media (max-width: 1169px) {
+    .vertical-timeline-element-date {
+      color: #333;
+    }
 
-  //   .small {
-  //     margin: 0;
-  //     text-align: justify;
-  //     font-size: 16px;
-  //     font-family: 'Nunito', sans-serif;
-  //   }
+    .workIcon {
+      top: 8px;
+    }
+  }
 
-  //   .column {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     width: 300px;
-  //   }
+  @media (max-width: 800px) {
+    width: 90%;
+    gap: 20px;
+    margin: 0;
 
-  //   .line {
-  //     display: flex;
-  //     flex-direction: line;
-  //     align-items: center;
-  //     gap: 40px;
-  //   }
-
-  //   @media (max-width: 800px) {
-  //     width: 90%;
-  //     gap: 20px;
-  //     margin: 0;
-
-  //     h1 {
-  //       transform: scale(0.7);
-  //     }
-
-  //     img {
-  //       height: 80px;
-  //     }
-
-  //     .column {
-  //       width: 100%;
-  //     }
-
-  //     .line {
-  //       gap: 20px;
-  //       width: 100%;
-  //     }
-
-  //     .paragraph {
-  //       font-size: 18px;
-  //     }
-  //   }
+    h1 {
+      transform: scale(0.7);
+    }
+  }
 `;
 
 export { ExperienceContainer };

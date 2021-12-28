@@ -1,14 +1,42 @@
 import React from 'react';
 import { NavBarContainer } from './style';
 
+const navData = [
+  { id: '#habilities', name: 'Habilidades' },
+  { id: '#education', name: 'Formação' },
+  { id: '#experiences', name: 'Experiências' },
+];
+
 const NavBar = () => {
+  const scrollTo = (id) => {
+    const anchor = document.querySelector(id);
+    anchor.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  };
+  
   return (
     <NavBarContainer>
-      <button onClick={() => window.scrollTo(0, 500)} className="nav">Habilidades</button>
-      <p>|</p>
-      <button onClick={() => window.scrollTo(0, 1050)} className="nav">Formação</button>
-      <p>|</p>
-      <button onClick={() => window.scrollTo(0, 1780)} className="nav">Experiências</button>
+      {navData.map((data, index) =>
+        (index < (navData.length)-1) 
+        ? (
+          <div key={index}>
+            <button onClick={() => scrollTo(data.id)} className="nav">
+              {data.name}
+            </button>
+            <p>|</p>
+          </div>
+        ) 
+        : (
+          <div key={index}>
+            <button onClick={() => scrollTo(data.id)} className="nav">
+              {data.name}
+            </button>
+          </div>
+        )
+      )}
     </NavBarContainer>
   );
 };

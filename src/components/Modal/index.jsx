@@ -2,11 +2,22 @@ import React from 'react';
 import { ModalContainer } from './style';
 import { IoCloseCircle } from 'react-icons/io5';
 
+const modalData = [
+  { id: '#habilities', name: 'Habilidades' },
+  { id: '#education', name: 'Formação' },
+  { id: '#experiences', name: 'Experiências' },
+];
+
 const Modal = ({ display, onClick }) => {
-  const goTo = (x, y) => {
-    window.scrollTo(x, y);
+  const scrollTo = (id) => {
     const button = document.getElementById('closeBtn');
     button.click();
+    const anchor = document.querySelector(id);
+    anchor.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
   };
 
   return (
@@ -15,15 +26,11 @@ const Modal = ({ display, onClick }) => {
         <button className="nav btn" id="closeBtn" onClick={onClick}>
           <IoCloseCircle size={'2em'} />
         </button>
-        <button onClick={() => goTo(0, 0)} className="nav">
-          Início
-        </button>
-        <button onClick={() => goTo(0, 490)} className="nav">
-          Habilidades
-        </button>
-        <button onClick={() => goTo(0, 1150)} className="nav">
-          Formação
-        </button>
+        {modalData.map((data, index) => (
+          <button key={index} onClick={() => scrollTo(data.id)} className="nav">
+            {data.name}
+          </button>
+        ))}
       </div>
     </ModalContainer>
   );

@@ -10,7 +10,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const Experiences = () => {
   return (
-    <ExperienceContainer>
+    <ExperienceContainer id="experiences">
       <h1>EXPERIÊNCIAS</h1>
       <VerticalTimeline>
         {experience.map((e, index) => (

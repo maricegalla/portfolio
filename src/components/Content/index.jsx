@@ -34,7 +34,7 @@ const Content = () => {
       <LineContainer />
       <Habilities />
       <LineContainer />
-      <EducationContainer>
+      <EducationContainer id="education">
         <h1>FORMAÇÃO</h1>
         {education.map((e, index) => (
           <div className="line" key={index}>
