@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   ContentContainer,
   EducationContainer,
@@ -10,17 +10,24 @@ import Experiences from './Experiences';
 import { education } from 'src/assets/education.js';
 import useViewport from 'src/hooks/useViewport';
 import Name from 'src/components/Name';
+import AOS from 'aos';
 
 const Content = () => {
   const { width } = useViewport();
 
+  useEffect(() => {
+    AOS.init()
+  }, []);
+
+  // data-aos="fade-up" data-aos-duration="3000"
+
   return (
-    <ContentContainer>
+    <ContentContainer >
       <MainTextContainer>
         <div className="order">
           <div className="image" />
         </div>
-        <div>
+        <div >
           {width > 800 ? <Name /> : ''}
           <span>Desenvolvedora Full Stack Jr</span>
           <p>

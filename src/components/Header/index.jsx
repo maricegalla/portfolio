@@ -10,17 +10,16 @@ import Modal from 'src/components/Modal';
 const Header = () => {
   const { width } = useViewport();
   const [isOpen, setIsOpen] = useState(false);
+  const noScroll = require('no-scroll');
 
   const openModal = () => {
-    setIsOpen(true);
-    const noScroll = require('no-scroll');
     noScroll.on()
+    setIsOpen(true);
   };
 
   const closeModal = () => {
-    setIsOpen(false);
-    const noScroll = require('no-scroll');
     noScroll.off()
+    setIsOpen(false);
   };
 
   return (

@@ -1,8 +1,17 @@
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  background-color: #61dafb;
-  background-image: linear-gradient(0deg, #61dafb 0%, #5b7ee0 100%);
+  background: #2bc0e4;
+  background: -webkit-linear-gradient(
+    to top,
+    #eaecc6,
+    #2bc0e4
+  );
+  background: linear-gradient(
+    to top,
+    #eaecc6,
+    #2bc0e4
+  );
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

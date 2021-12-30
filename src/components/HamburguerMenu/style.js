@@ -7,7 +7,7 @@ const HamburguerMenuContainer = styled.button`
   align-items: center;
   background-color: transparent;
   border: none;
-  color: #4264c7 !important;
+  color: #127890 !important;
   width: 50px;
   cursor: pointer;
 `;

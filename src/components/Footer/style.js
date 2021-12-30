@@ -1,12 +1,21 @@
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
-  background-color: #61dafb;
-  background-image: linear-gradient(180deg, #61dafb 0%, #5b7ee0 100%);
+  background: #2bc0e4;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #eaecc6,
+    #2bc0e4
+  );
+  background: linear-gradient(
+    to bottom,
+    #eaecc6,
+    #2bc0e4
+  );
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #4264c7;
+  color: #127890;
   display: flex;
   font-size: 14px;
   font-weight: bold;

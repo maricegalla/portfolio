@@ -15,7 +15,7 @@ const NameContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #4264c7 !important;
+    color: #127890 !important;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     width: fit-content;

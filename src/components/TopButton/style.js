@@ -4,7 +4,7 @@ const TopButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4264c7;
+  background-color: #127890;
   border-radius: 24px;
   border: none;
   color: #fff;

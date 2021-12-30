@@ -22,9 +22,9 @@ const MainTextContainer = styled.div`
   display: flex;
   align-items: center;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  gap: 60px;
-  padding: 20px;
+  font-weight: 700;
+  gap: 100px;
+  padding: 40px;
   width: fit-content;
   height: fit-content;
 
@@ -36,9 +36,10 @@ const MainTextContainer = styled.div`
     align-items: center;
 
     span {
-      color: #5b7ee0;
+      color: #127890;
       font-weight: 700;
       font-size: 22px;
+      padding: 10px 0;
     }
 
     p {
@@ -50,10 +51,10 @@ const MainTextContainer = styled.div`
   }
 
   .image {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     background-image: url(${myPicture}),
-      linear-gradient(to bottom right, #61dafb, #5b7ee0, #4264c7);
+      linear-gradient(to bottom right, #eaecc6, #2bc0e4, #127890);
     border-radius: 50% 50% 10% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,9 +89,11 @@ const MainTextContainer = styled.div`
 `;
 
 const LineContainer = styled.div`
-  border-top: 2px solid #5b7ee0;
+  /* border-top: 10px solid #127890; */
   width: 60%;
   margin: 50px;
+  height: 4px;
+  background: linear-gradient(to left, #eaecc6, #2bc0e4, #127890, #2bc0e4, #eaecc6);
 
   @media (max-width: 800px) {
     margin: 20px;
@@ -115,6 +118,7 @@ const EducationContainer = styled.div`
 
   img {
     height: 100px;
+    border-radius: 8px;
   }
 
   .paragraph {
@@ -147,7 +151,7 @@ const EducationContainer = styled.div`
   }
 
   @media (max-width: 800px) {
-    width: 90%;
+    width: 85%;
     gap: 20px;
     margin: 0;
 
@@ -164,7 +168,7 @@ const EducationContainer = styled.div`
     }
 
     .line {
-      gap: 20px;
+      gap: 12px;
       width: 100%;
     }
 

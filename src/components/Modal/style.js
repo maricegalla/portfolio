@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const ModalContainer = styled.div`
-  background-color: #61dafb;
-  background-image: linear-gradient(0deg, #61dafb 0%, #5b7ee0 100%);
+  background-color: #a5d6af;
+  background-image: linear-gradient(0deg, #a5d6af 0%, #127890 100%);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

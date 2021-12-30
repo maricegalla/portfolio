@@ -5,7 +5,7 @@ const SocialMediaContainer = styled.div`
   gap: 20px;
 
   a {
-    color: #4264c7;
+    color: #127890;
   }
 `;
 

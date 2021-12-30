@@ -8,7 +8,7 @@ const HabilitiesContainer = styled.div`
   font-family: 'Work Sans', sans-serif;
   font-size: 30px;
   text-align: center;
-  margin: 0 100px;
+  margin: 20px 100px;
   width: 60%;
   gap: 40px;
 
