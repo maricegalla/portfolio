@@ -21,7 +21,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-around;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
 
   a {
     color: #4264c7;

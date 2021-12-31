@@ -86,4 +86,42 @@ const ExperienceContainer = styled.div`
   }
 `;
 
-export { ExperienceContainer };
+const ExperienceTable = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+
+  & > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 74%;
+      text-align: center;
+      background-color: #fff;
+      padding: 0.5em;
+      border-radius: 0.2em;
+      color: #333;
+      gap: 0.2em;
+
+      span {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+`;
+
+export { ExperienceContainer, ExperienceTable };

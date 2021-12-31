@@ -2,7 +2,7 @@ import React from 'react';
 import { Chrono } from 'react-chrono';
 import useViewport from 'src/hooks/useViewport';
 import { experiences } from 'src/assets/experiences';
-import { ExperienceContainer } from './style';
+import { ExperienceContainer, ExperienceTable } from './style';
 import airplane from 'src/assets/airplane.svg';
 import laptop from 'src/assets/laptop.svg';
 import stove from 'src/assets/stove.svg';
@@ -33,7 +33,18 @@ const Experiences = () => {
           </Chrono>
         </div>
       ) : (
-        ''
+        <ExperienceTable>
+          {experiences.map((e, index) => (
+            <div>
+              <img src={e.image} alt="icon" />
+              <div>
+                <span>{e.title}</span>
+                <h6>{e.cardTitle}</h6>
+                <p>{e.cardDetailedText}</p>
+              </div>
+            </div>
+          ))}
+        </ExperienceTable>
       )}
     </ExperienceContainer>
   );
