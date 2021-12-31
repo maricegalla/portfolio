@@ -49,6 +49,12 @@ const ExperienceContainer = styled.div`
     background-color: #127890;
     color: #fff;
   }
+
+  .css-1wybm3g-Circle.using-icon {
+    background-color: #0E1821;
+    transform: scale(2);
+    cursor: default !important;
+  }
   
   @media (max-width: 800px) {
     width: 90%;

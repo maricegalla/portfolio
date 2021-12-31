@@ -27,6 +27,7 @@ const MainTextContainer = styled.div`
   padding: 40px;
   width: fit-content;
   height: fit-content;
+  justify-content: center;
 
   & > div {
     display: flex;
@@ -70,14 +71,14 @@ const MainTextContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width:70%;
     gap: 20px;
 
     & > div {
       display: flex;
       flex-direction: column;
+      width: 130%;
       height: fit-content;
-      width: fit-content;
       align-items: center;
     }
 
