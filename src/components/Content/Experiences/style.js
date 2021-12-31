@@ -16,6 +16,39 @@ const ExperienceContainer = styled.div`
     text-align: center;
   }
 
+  & > div {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .css-4reink-TimelineCardTitle {
+    text-align:center;
+    font-weight: 700;
+    color: #333 !important;
+  }
+
+  .css-2f561s-TimelineItemContentWrapper {
+    text-align:center;
+    color: #333 !important;
+  }
+
+  .css-xa4des-VerticalCircleWrapper::after {
+    background-color: #127890;
+  }
+
+  .css-1wybm3g-Circle:not(.using-icon) {
+    background-color: #127890;
+  }
+
+  .css-1wybm3g-Circle:not(.using-icon).active::after {
+    background-color: #eaecc6;
+  }
+
+  .css-1f02b8t-TitleWrapper.active {
+    background-color: #127890;
+    color: #fff;
+  }
   
   @media (max-width: 800px) {
     width: 90%;
@@ -25,6 +58,25 @@ const ExperienceContainer = styled.div`
     h1 {
       transform: scale(0.7);
     }
+  
+    .css-3i23bs-TimelineMainWrapper {
+      padding: 0;
+    }
+
+    .css-1iv48dl-TimelineVerticalWrapper {
+      padding: 0;
+    }
+
+    .css-1f02b8t-TitleWrapper { {
+      text-align: center;
+      font-size: 0.8rem;
+      transform: rotate(270deg);
+      width: 100%;
+    }
+    .css-mpnodf-TimelineTitleWrapper.right {
+      align-items: fit-content;
+    }
+
   }
 `;
 
