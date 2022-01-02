@@ -1,26 +1,43 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { ContactContainer } from './style';
 import AOS from 'aos';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2'
 
 const ContactForm = () => {
-  const [inputValues, setInputValues] = useState({
-    name: '',
-    subject: '',
-    message: '',
-    email: '',
-    phone: '',
-  });
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const handleChange = useCallback(
-    (e) => {
-      const { name, value } = e.target;
-      setInputValues({ ...inputValues, [name]: value });
-    },
-    [inputValues]
-  );
+    emailjs
+      .sendForm(
+        'gmail',
+        'template',
+        e.target,
+        'user_IAWSiU9QFhEWm23VpAZeK'
+      )
+      .then(
+        (result) => {
+          Swal.fire({
+            icon: 'success',
+            title:'Mensagem enviada!',
+            confirmButtonColor: '#127890'
+          })
+        },
+        (error) => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Algo deu errado',
+            confirmButtonColor: '#127890'
+          })
+        }
+      );
+      e.target.reset();
+  };
 
   useEffect(() => {
-    AOS.init({ duration: 3000, timeout: 2000 });
+    AOS.init({ duration: 3000 });
   }, []);
 
   return (
@@ -28,54 +45,58 @@ const ContactForm = () => {
       <h1>CONTATO</h1>
       <div data-aos="flip-up">
         <div className="rotatedForm">
-          <form className="form" data-aos="flip-left">
+          <form
+            className="form"
+            method="post"
+            action="#"
+            data-aos="flip-left"
+            onSubmit={sendEmail}
+          >
             <div className="field">
-              <label for="firstname">Nome</label>
+              <label htmlFor="name">Nome</label>
               <input
                 type="text"
                 name="name"
-                id="firstname"
-                onChange={(e) => handleChange(e)}
+                id="name"
               />
             </div>
             <div className="field">
-              <label for="subject">Assunto</label>
+              <label htmlFor="subject">Assunto</label>
               <input
                 type="text"
                 name="subject"
                 id="subject"
-                onChange={(e) => handleChange(e)}
               />
             </div>
             <div className="field">
-              <label for="message">Mensagem</label>
+              <label htmlFor="message">Mensagem</label>
               <textarea
                 name="message"
                 id="message"
-                onChange={(e) => handleChange(e)}
               />
             </div>
-            <div class="field">
-              <label for="email">Email</label>
+            <div className="field">
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                onChange={(e) => handleChange(e)}
               />
             </div>
             <div className="field">
-              <label for="phone">Telefone</label>
+              <label htmlFor="phone">Telefone</label>
               <input
                 type="text"
                 name="phone"
                 id="phone"
-                onChange={(e) => handleChange(e)}
               />
             </div>
-            <button type="submit" className="sendButton" value="Send Email">
-              Enviar
-            </button>
+            <input
+              type="submit"
+              id="button"
+              className="sendButton"
+              value="Enviar"
+            />
           </form>
         </div>
       </div>

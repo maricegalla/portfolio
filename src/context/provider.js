@@ -27,7 +27,7 @@ const Provider = ({ children }) => {
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
-}
+};
 
 Provider.propTypes = {
   children: node,
