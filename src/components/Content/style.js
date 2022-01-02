@@ -11,6 +11,7 @@ const ContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: -2;
+  overflow-x: hidden;
 
   @media (max-width: 800px) {
     padding-top: 110px;
@@ -70,7 +71,7 @@ const MainTextContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     gap: 20px;
 
     & > div {
@@ -167,7 +168,7 @@ const EducationContainer = styled.div`
     margin: 0;
 
     h1 {
-      transform: scale(0.7);
+      font-size: 40px;
     }
 
     img {

@@ -63,7 +63,7 @@ const ExperienceContainer = styled.div`
     gap: 20px;
 
     h1 {
-      transform: scale(0.7);
+     font-size: 40px;
     }
   }
 
