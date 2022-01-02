@@ -5,6 +5,7 @@ const navData = [
   { id: '#habilities', name: 'Habilidades' },
   { id: '#education', name: 'Formação' },
   { id: '#experiences', name: 'Experiências' },
+  { id: '#contact', name: 'Contato' },
 ];
 
 const NavBar = () => {

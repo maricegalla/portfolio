@@ -7,7 +7,7 @@ import Error from './pages/NotFound';
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" element={<Main />} />
+      <Route exact path="/portfolio/" element={<Main />} />
       <Route path="*" element={<Error />} />
     </Switch>
   );

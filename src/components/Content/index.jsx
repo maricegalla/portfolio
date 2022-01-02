@@ -7,6 +7,7 @@ import {
 } from './style';
 import Habilities from './Habilities';
 import Experiences from './Experiences';
+import ContactForm from './Contact'
 import { education } from 'src/assets/education.js';
 import useViewport from 'src/hooks/useViewport';
 import Name from 'src/components/Name';
@@ -66,6 +67,8 @@ const Content = () => {
       </EducationContainer>
       <LineContainer />
       <Experiences />
+      {/* <LineContainer />
+      <ContactForm /> */}
     </ContentContainer>
   );
 };

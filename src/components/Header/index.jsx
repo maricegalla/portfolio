@@ -27,9 +27,9 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      {(width > 800 || location.pathname !== '/') ? <SocialMedia /> : ''}
-      {(width >= 1000 && location.pathname === '/') ? <NavBar /> : ''}
-      {(width <= 800 && location.pathname === '/') ? (
+      {(width > 800 || location.pathname !== '/portfolio/') ? <SocialMedia /> : ''}
+      {(width >= 1000 && location.pathname === '/portfolio/') ? <NavBar /> : ''}
+      {(width <= 800 && location.pathname === '/portfolio/') ? (
         <div className="container">
           <Name />
           <HamburguerMenu onClick={() => openModal()} />
