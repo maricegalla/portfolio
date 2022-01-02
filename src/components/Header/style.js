@@ -24,7 +24,7 @@ const HeaderContainer = styled.header`
   z-index: 10;
 
   a {
-    color: #4264c7;
+    color: #127890;
   }
 
   div {

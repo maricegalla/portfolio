@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import {
   ContentContainer,
   EducationContainer,
@@ -15,21 +15,31 @@ import AOS from 'aos';
 const Content = () => {
   const { width } = useViewport();
 
-  useEffect(() => {
-    AOS.init()
+  const typeWrite = useCallback((element) => {
+    const textToArray = element.innerHTML.split('');
+    element.innerHTML = ' ';
+    textToArray.forEach((letter, i) => {
+      setTimeout(() => {
+        element.innerHTML += letter;
+      }, 120 * i);
+    });
   }, []);
 
-  // data-aos="fade-up" data-aos-duration="3000"
+  useEffect(() => {
+    const title = document.querySelector('.typewriter');
+    typeWrite(title);
+    AOS.init({ duration: 1200 });
+  }, [typeWrite]);
 
   return (
-    <ContentContainer >
+    <ContentContainer data-aos="fade-up">
       <MainTextContainer>
         <div className="order">
           <div className="image" />
         </div>
-        <div >
+        <div>
           {width > 800 ? <Name /> : ''}
-          <span>Desenvolvedora Full Stack Jr</span>
+          <span className="typewriter">Desenvolvedora Full Stack Jr</span>
           <p>
             Graduada em Engenheira Mecânica e MBA em Gestão Empresarial.
             Acredito no poder da transformação através da educação. Sou
@@ -44,7 +54,7 @@ const Content = () => {
       <EducationContainer id="education">
         <h1>FORMAÇÃO</h1>
         {education.map((e, index) => (
-          <div className="line" key={index}>
+          <div className="line" key={index} data-aos="fade-left">
             <img src={e.image} alt="institution" />
             <div className="column">
               <p className="small">{e.year}</p>

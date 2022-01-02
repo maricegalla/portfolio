@@ -18,6 +18,7 @@ const Experiences = () => {
             date={e.date}
             iconStyle={{ background: 'transparent' }}
             icon={<img className="img_logo" alt="logo" src={e.image} />}
+            key={index}
           >
             <h6>{e.company}</h6>
             <p>{e.position}</p>

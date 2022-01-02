@@ -2,7 +2,7 @@ import React, { useCallback, useState, useEffect } from 'react';
 import { node } from 'prop-types';
 import Context from './context';
 
-function Provider({ children }) {
+const Provider = ({ children }) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   const handleWindowResize = () => {

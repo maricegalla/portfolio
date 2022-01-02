@@ -63,7 +63,6 @@ const MainTextContainer = styled.div`
     background-origin: border-box;
     background-clip: content-box, border-box;
     border: 6px solid transparent;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
     display: flex;
   }
 
@@ -71,7 +70,7 @@ const MainTextContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:70%;
+    width: 80%;
     gap: 20px;
 
     & > div {
@@ -80,6 +79,10 @@ const MainTextContainer = styled.div`
       width: 130%;
       height: fit-content;
       align-items: center;
+
+      span {
+        font-size: 16px;
+      }
     }
 
     .image {
@@ -94,7 +97,14 @@ const LineContainer = styled.div`
   width: 60%;
   margin: 50px;
   height: 4px;
-  background: linear-gradient(to left, #eaecc6, #2bc0e4, #127890, #2bc0e4, #eaecc6);
+  background: linear-gradient(
+    to left,
+    #eaecc6,
+    #2bc0e4,
+    #127890,
+    #2bc0e4,
+    #eaecc6
+  );
 
   @media (max-width: 800px) {
     margin: 20px;
