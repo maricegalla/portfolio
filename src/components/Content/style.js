@@ -5,13 +5,12 @@ const ContentContainer = styled.div`
   background-color: #0e1821;
   height: 100%;
   width: 100%;
-  padding-top: 140px;
-  padding-bottom: 50px;
+  padding: 140px 0 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: -2;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @media (max-width: 800px) {
     padding-top: 110px;
