@@ -1,37 +1,38 @@
-import airplane from 'src/assets/airplane.svg';
-import laptop from 'src/assets/laptop.svg';
-import stove from 'src/assets/stove.svg';
+import latam from 'src/assets/latam.jpeg'
+import sambatech from 'src/assets/sambatech.jpeg'
+import whirlpool from 'src/assets/whirlpool.jpeg'
+import variglog from 'src/assets/variglog.jpeg'
 
 
 export const experiences = [
   {
-    title: '2021 - presente',
-    cardTitle: 'Sambatech',
-    cardDetailedText: 'Técnica de Desenvolvimento de Software',
-    image: laptop
+    date: '2021 - presente',
+    company: 'Sambatech',
+    position: 'Técnica de Desenvolvimento de Software',
+    image: sambatech
   },
   {
-    title: '2014 - 2020',
-    cardTitle: 'Latam Airlines',
-    cardDetailedText: 'Supervisora de Qualidade',
-    image: airplane
+    date: '2014 - 2020',
+    company: 'Latam Airlines',
+    position: 'Supervisora de Qualidade',
+    image: latam
   },
   {
-    title: '2008 - 2014',
-    cardTitle: 'Latam Airlines',
-    cardDetailedText: 'Engenheira de Manutenção',
-    image: airplane
+    date: '2008 - 2014',
+    company: 'Latam Airlines',
+    position: 'Engenheira de Manutenção',
+    image: latam
   },
   {
-    title: '2007 - 2008',
-    cardTitle: 'Variglog',
-    cardDetailedText: 'Engenheira de Manutenção',
-    image: airplane
+    date: '2007 - 2008',
+    company: 'Variglog',
+    position: 'Engenheira de Manutenção',
+    image: variglog
   },
   {
-    title: '2005 - 2007',
-    cardTitle: 'Whirlpool Corporation',
-    cardDetailedText: 'Técnica de Logística',
-    image: stove
+    date: '2005 - 2007',
+    company: 'Whirlpool Corporation',
+    position: 'Técnica de Logística',
+    image: whirlpool
   },
 ];

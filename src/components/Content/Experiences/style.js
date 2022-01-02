@@ -8,8 +8,9 @@ const ExperienceContainer = styled.div`
   font-family: 'Work Sans', sans-serif;
   font-size: 30px;
   margin: 0 100px;
-  width: 80%;
+  width: 60%;
   gap: 40px;
+  box-sizing: border-box;
 
   & > h1 {
     margin-top: 0;
@@ -17,111 +18,86 @@ const ExperienceContainer = styled.div`
   }
 
   & > div {
-    width: 100%;
-    height: fit-content;
     font-family: 'Nunito', sans-serif;
-  }
-  
-  .css-4reink-TimelineCardTitle {
-    text-align:center;
-    font-weight: 700;
-    color: #333 !important;
+    color: #333;
   }
 
-  .css-2f561s-TimelineItemContentWrapper {
-    text-align:center;
-    color: #333 !important;
+  span {
+    font-size: 14px;
   }
 
-  .css-xa4des-VerticalCircleWrapper::after {
-    background-color: #127890;
+  p {
+    font-size: 12px;
   }
 
-  .css-1wybm3g-Circle:not(.using-icon) {
-    background-color: #127890;
+  ::after,
+  ::before {
+    box-sizing: content-box;
   }
 
-  .css-1wybm3g-Circle:not(.using-icon).active::after {
-    background-color: #eaecc6;
+  .vertical-timeline-element-icon,
+  .bounce-in {
+    box-shadow: 0px 0px transparent;
+    text-align: center;
   }
 
-  .css-1f02b8t-TitleWrapper.active {
-    background-color: #127890;
+  .vertical-timeline-element-date {
+    width: fit-content !important;
     color: #fff;
+    font-weight: bold;
+    padding: 0.8em;
+    background-color: #127890;
+    border-radius: 1.5em;
+    text-align: center !important;
+    margin: 0 1em;
   }
 
-  .css-1wybm3g-Circle.using-icon {
-    background-color: #0E1821;
-    transform: scale(2);
-    cursor: default !important;
+  .img_logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
   }
-  
+
   @media (max-width: 800px) {
     width: 90%;
     gap: 20px;
-    margin: 0;
 
     h1 {
       transform: scale(0.7);
     }
-  
-    .css-3i23bs-TimelineMainWrapper {
-      padding: 0;
-    }
+  }
 
-    .css-1iv48dl-TimelineVerticalWrapper {
-      padding: 0;
-    }
-
-    .css-1f02b8t-TitleWrapper { {
-      text-align: center;
-      font-size: 0.8rem;
-      transform: rotate(270deg);
+  @media only screen and (max-width: 1169px) {
+    .vertical-timeline {
       width: 100%;
     }
-    .css-mpnodf-TimelineTitleWrapper.right {
-      align-items: fit-content;
+
+    .vertical-timeline-element-icon {
+      top: 6%;
     }
 
-  }
-`;
+    .img_logo {
+      width: 30px;
+      height: 30px;
+    }
 
-const ExperienceTable = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  gap: 20px;
-
-  & > div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-
-    & > div {
+    .vertical-timeline-element-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 74%;
-      text-align: center;
+    }
+
+    .vertical-timeline-element-date {
+      width: 100% !important;
+      color: #127890;
+      padding: 0.8em;
       background-color: #fff;
-      padding: 0.5em;
-      border-radius: 0.2em;
-      color: #333;
-      gap: 0.2em;
-
-      span {
-        font-size: 14px;
-      }
-
-      p {
-        font-size: 12px;
-      }
+      border-radius: none;
+      font-weight: bold;
+      text-align: center !important;
+      margin: 0;
+      order: -1;
     }
   }
 `;
 
-export { ExperienceContainer, ExperienceTable };
+export { ExperienceContainer };

@@ -7,4 +7,5 @@
   width: auto;
   scroll-behavior: smooth;
   scroll-margin-top: 110px;
+  box-sizing: border-box;
 }
