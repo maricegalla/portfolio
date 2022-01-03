@@ -32,7 +32,7 @@ const HeaderContainer = styled.header`
     gap: 32px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     div {
       gap: 0;
     }

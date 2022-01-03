@@ -39,7 +39,7 @@ const HabilitiesContainer = styled.div`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 90%;
     gap: 20px;
 

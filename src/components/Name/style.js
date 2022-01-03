@@ -11,7 +11,7 @@ const NameContainer = styled.div`
     margin: 0;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
     align-items: center;

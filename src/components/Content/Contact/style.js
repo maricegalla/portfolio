@@ -88,23 +88,42 @@ const ContactContainer = styled.div`
       resize: none;
     }
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 100%;
     gap: 20px;
 
     .rotatedForm {
-    width: 80%;
-    transform: rotate(-3deg);
-  }
+      width: 80%;
+      transform: rotate(-3deg);
+    }
 
-  .form {
-    transform: rotate(3deg);
-  }
+    .form {
+      transform: rotate(3deg);
+    }
 
     h1 {
-      font-size: 40px
+      font-size: 40px;
     }
   }
+
+  .iti__flag {
+    background-image: url('path/to/flags.png');
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .iti__flag {
+      background-image: url('path/to/flags@2x.png');
+    }
+  }
+
+  .PhoneInputCountryIcon--border {
+    box-shadow: none !important;
+  }
+
+  .PhoneInputCountrySelectArrow {
+    color: #127890;
+  }
+
 `;
 
 export { ContactContainer };

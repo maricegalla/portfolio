@@ -1,39 +1,38 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ContactContainer } from './style';
 import AOS from 'aos';
 import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 
 const ContactForm = () => {
-  
+  const [value, setValue] = useState();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        'gmail',
-        'template',
-        e.target,
-        'user_IAWSiU9QFhEWm23VpAZeK'
-      )
+      .sendForm('gmail', 'template', e.target, 'user_IAWSiU9QFhEWm23VpAZeK')
       .then(
         (result) => {
           Swal.fire({
             icon: 'success',
-            title:'Mensagem enviada!',
-            confirmButtonColor: '#127890'
-          })
+            title: 'Mensagem enviada!',
+            confirmButtonColor: '#127890',
+          });
         },
         (error) => {
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Algo deu errado',
-            confirmButtonColor: '#127890'
-          })
+            confirmButtonColor: '#127890',
+          });
         }
       );
-      e.target.reset();
+    e.target.reset();
+    setValue('');
   };
 
   useEffect(() => {
@@ -58,6 +57,7 @@ const ContactForm = () => {
                 type="text"
                 name="name"
                 id="name"
+                placeholder="Digite seu nome"
               />
             </div>
             <div className="field">
@@ -66,6 +66,7 @@ const ContactForm = () => {
                 type="text"
                 name="subject"
                 id="subject"
+                placeholder="Digite o assunto"
               />
             </div>
             <div className="field">
@@ -73,22 +74,27 @@ const ContactForm = () => {
               <textarea
                 name="message"
                 id="message"
+                placeholder="Digite a mensagem"
               />
             </div>
             <div className="field">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">E-mail</label>
               <input
                 type="email"
                 name="email"
                 id="email"
+                placeholder="Digite seu e-mail"
               />
             </div>
             <div className="field">
               <label htmlFor="phone">Telefone</label>
-              <input
-                type="text"
+              <PhoneInput
+                placeholder="Digite seu número"
+                defaultCountry="BR"
                 name="phone"
                 id="phone"
+                value={value}
+                onChange={setValue}
               />
             </div>
             <input

@@ -39,7 +39,7 @@ const Content = () => {
           <div className="image" />
         </div>
         <div>
-          {width > 800 ? <Name /> : ''}
+          {width > 900 ? <Name /> : ''}
           <span className="typewriter">Desenvolvedora Full Stack Jr</span>
           <p>
             Graduada em Engenheira Mecânica e MBA em Gestão Empresarial.

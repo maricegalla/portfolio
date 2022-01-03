@@ -17,6 +17,7 @@
     "react-animated-css": "^1.2.1",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-phone-number-input": "^3.1.44",
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-vertical-timeline-component": "^3.5.2",

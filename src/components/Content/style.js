@@ -12,7 +12,7 @@ const ContentContainer = styled.div`
   z-index: -2;
   overflow: hidden;
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     padding-top: 110px;
   }
 `;
@@ -90,6 +90,10 @@ const MainTextContainer = styled.div`
       height: 200px;
     }
   }
+
+  .typewriter{
+    text-align: center;
+  }
 `;
 
 const LineContainer = styled.div`
@@ -106,7 +110,7 @@ const LineContainer = styled.div`
     #eaecc6
   );
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     margin: 20px;
   }
 `;
@@ -161,7 +165,7 @@ const EducationContainer = styled.div`
     gap: 40px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 85%;
     gap: 20px;
     margin: 0;
