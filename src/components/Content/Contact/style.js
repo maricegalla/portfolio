@@ -88,6 +88,12 @@ const ContactContainer = styled.div`
       padding: 10px 15px;
       resize: none;
     }
+
+    small {
+      padding: 5px 0 0;
+      font-size: 12px;
+      color: red;
+    }
   }
   @media (max-width: 900px) {
     width: 100%;
@@ -124,7 +130,6 @@ const ContactContainer = styled.div`
   .PhoneInputCountrySelectArrow {
     color: #127890;
   }
-
 `;
 
 export { ContactContainer };

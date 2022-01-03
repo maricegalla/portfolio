@@ -5,34 +5,88 @@ import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
+import * as Yup from 'yup';
 
 const ContactForm = () => {
-  const [value, setValue] = useState();
+  const [name, setName] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState();
+  const [errors, setErrors] = useState({});
+
+  const userSchema = Yup.object().shape({
+    name: Yup.string()
+      .required('Nome é obrigatório')
+      .min(3, 'Insira um nome válido'),
+    subject: Yup.string().required('Asunto é obrigatório'),
+    message: Yup.string().required('Mensagem é obrigatória'),
+    email: Yup.string()
+      .required('E-mail é obrigatório')
+      .email('Insira um e-mail válido'),
+    phone: Yup.number().required('Telefone é obrigatório'),
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('gmail', 'template', e.target, 'user_IAWSiU9QFhEWm23VpAZeK')
-      .then(
-        (result) => {
-          Swal.fire({
-            icon: 'success',
-            title: 'Mensagem enviada!',
-            confirmButtonColor: '#127890',
-          });
+    try {
+      userSchema.validateSync(
+        {
+          name,
+          subject,
+          message,
+          email,
+          phone,
         },
-        (error) => {
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Algo deu errado',
-            confirmButtonColor: '#127890',
-          });
+        {
+          abortEarly: false,
         }
       );
-    e.target.reset();
-    setValue('');
+      emailjs
+        .sendForm('gmail', 'template', e.target, 'user_IAWSiU9QFhEWm23VpAZeK')
+        .then(
+          (result) => {
+            Swal.fire({
+              icon: 'success',
+              title: 'Mensagem enviada!',
+              confirmButtonColor: '#127890',
+            });
+            e.target.reset();
+            setName('');
+            setSubject('');
+            setMessage('');
+            setEmail('');
+            setPhone();
+            setErrors({});
+          },
+          (error) => {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Algo deu errado',
+              confirmButtonColor: '#127890',
+            });
+          }
+        );
+    } catch (err) {
+      const { inner } = err;
+      let formErrors = {};
+
+      if (inner && inner[0]) {
+        inner.forEach((error) => {
+          const { path, message } = error;
+
+          if (!formErrors[path]) {
+            formErrors[path] = message;
+          }
+        });
+      }
+
+      console.log('form errors', formErrors);
+
+      setErrors(formErrors);
+    }
   };
 
   useEffect(() => {
@@ -58,7 +112,10 @@ const ContactForm = () => {
                 name="name"
                 id="name"
                 placeholder="Digite seu nome"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
+              <small>{errors.name}</small>
             </div>
             <div className="field">
               <label htmlFor="subject">Assunto</label>
@@ -67,7 +124,10 @@ const ContactForm = () => {
                 name="subject"
                 id="subject"
                 placeholder="Digite o assunto"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
               />
+              <small>{errors.subject}</small>
             </div>
             <div className="field">
               <label htmlFor="message">Mensagem</label>
@@ -75,7 +135,10 @@ const ContactForm = () => {
                 name="message"
                 id="message"
                 placeholder="Digite a mensagem"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
+              <small>{errors.message}</small>
             </div>
             <div className="field">
               <label htmlFor="email">E-mail</label>
@@ -84,7 +147,10 @@ const ContactForm = () => {
                 name="email"
                 id="email"
                 placeholder="Digite seu e-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
+              <small>{errors.email}</small>
             </div>
             <div className="field">
               <label htmlFor="phone">Telefone</label>
@@ -93,9 +159,10 @@ const ContactForm = () => {
                 defaultCountry="BR"
                 name="phone"
                 id="phone"
-                value={value}
-                onChange={setValue}
+                value={phone}
+                onChange={setPhone}
               />
+              <small>{errors.phone}</small>
             </div>
             <input
               type="submit"
