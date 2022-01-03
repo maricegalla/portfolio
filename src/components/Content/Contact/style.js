@@ -73,6 +73,7 @@ const ContactContainer = styled.div`
     label {
       font-size: 16px;
       color: #333;
+      font-weight: bold;
     }
 
     input {
