@@ -36,13 +36,6 @@ const MainTextContainer = styled.div`
     width: min-content;
     align-items: center;
 
-    span {
-      color: #127890;
-      font-weight: 700;
-      font-size: 22px;
-      padding: 10px 0;
-    }
-
     p {
       text-align: justify;
       font-weight: 100;
@@ -91,13 +84,25 @@ const MainTextContainer = styled.div`
     }
   }
 
-  .typewriter{
+  .typewriter {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 0;
     text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #127890;
+    background-image: linear-gradient(to top right, #127890, #eaecc6);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
   }
 `;
 
 const LineContainer = styled.div`
-  /* border-top: 10px solid #127890; */
   width: 60%;
   margin: 50px;
   height: 4px;

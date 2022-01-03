@@ -12,6 +12,7 @@ import { education } from 'src/assets/education.js';
 import useViewport from 'src/hooks/useViewport';
 import Name from 'src/components/Name';
 import AOS from 'aos';
+import Projects from './Projects';
 
 const Content = () => {
   const { width } = useViewport();
@@ -40,7 +41,7 @@ const Content = () => {
         </div>
         <div>
           {width > 900 ? <Name /> : ''}
-          <span className="typewriter">Desenvolvedora Full Stack Jr</span>
+          <span className="typewriter">Desenvolvedora Full Stack</span>
           <p>
             Graduada em Engenheira Mecânica e MBA em Gestão Empresarial.
             Acredito no poder da transformação através da educação. Sou
@@ -67,6 +68,8 @@ const Content = () => {
       </EducationContainer>
       <LineContainer />
       <Experiences />
+      {/* <LineContainer />
+      <Projects /> */}
       <LineContainer />
       <ContactForm />
     </ContentContainer>

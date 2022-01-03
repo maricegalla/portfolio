@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const ModalContainer = styled.div`
   background-color: #a5d6af;
-  background-image: linear-gradient(180deg, #a5d6af 0%, #127890 100%);
+  background-image: linear-gradient( to top, #127890,
+    #2bc0e4,
+    #eaecc6);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +27,7 @@ const ModalContainer = styled.div`
   }
 
   .nav {
-    padding: 30px;
+    padding: 20px;
     border: none;
     background: none;
     font-size: 16px;

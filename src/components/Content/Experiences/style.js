@@ -50,6 +50,7 @@ const ExperienceContainer = styled.div`
     border-radius: 1.5em;
     text-align: center !important;
     margin: 0 1em;
+    opacity: 1;
   }
 
   .img_logo {
