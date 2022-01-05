@@ -2,8 +2,13 @@ import styled from 'styled-components';
 
 const NavBarContainer = styled.nav`
   display: flex;
-  gap: 30px;
-  
+  gap: 20px;
+
+  & > div {
+    display: flex;
+    gap: 20px;
+  }
+
   p {
     font-size: 14px;
     font-family: 'Nunito', sans-serif;

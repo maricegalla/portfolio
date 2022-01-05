@@ -5,6 +5,7 @@ const navData = [
   { id: '#habilities', name: 'Habilidades' },
   { id: '#education', name: 'Formação' },
   { id: '#experiences', name: 'Experiências' },
+  { id: '#projects', name: 'Projetos' },
   { id: '#contact', name: 'Contato' },
 ];
 

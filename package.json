@@ -24,6 +24,7 @@
     "react-vertical-timeline-component": "^3.5.2",
     "styled-components": "^5.3.3",
     "sweetalert2": "^11.3.3",
+    "swiper": "^7.4.1",
     "web-vitals": "^1.0.1",
     "yup": "^0.32.11"
   },

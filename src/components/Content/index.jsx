@@ -68,8 +68,8 @@ const Content = () => {
       </EducationContainer>
       <LineContainer />
       <Experiences />
-      {/* <LineContainer />
-      <Projects /> */}
+      <LineContainer />
+      <Projects />
       <LineContainer />
       <ContactForm />
     </ContentContainer>
