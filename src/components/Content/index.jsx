@@ -8,7 +8,7 @@ import {
 import Habilities from './Habilities';
 import Experiences from './Experiences';
 import ContactForm from './Contact'
-import { education } from 'src/assets/education.js';
+import { education } from 'src/helpers/education.js';
 import useViewport from 'src/hooks/useViewport';
 import Name from 'src/components/Name';
 import AOS from 'aos';

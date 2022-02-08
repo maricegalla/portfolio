@@ -1,5 +1,5 @@
 import React from 'react';
-import { experiences } from 'src/assets/experiences';
+import { experiences } from 'src/helpers/experiences';
 import { ExperienceContainer } from './style';
 import {
   VerticalTimeline,

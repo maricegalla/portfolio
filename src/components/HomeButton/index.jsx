@@ -7,7 +7,7 @@ const BackToHome = () => {
   const navigate = useNavigate();
 
   return (
-    <HomeButtonContainer onClick={() => navigate("/")}>
+    <HomeButtonContainer onClick={() => navigate("/portfolio")}>
       <p>Voltar</p>
       <HiHome />
     </HomeButtonContainer>
