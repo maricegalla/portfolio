@@ -48,7 +48,7 @@ const Projects = () => {
                   rel="noreferrer"
                   key={index}
                 >
-                  <span>{item.name}</span>
+                  <span>{item.displayName}</span>
             </a>
                 </Content>
                 : <Content image={item.images[0].resolutions.thumbnail.url}>
@@ -58,7 +58,7 @@ const Projects = () => {
                   rel="noreferrer"
                   key={index}
                 >
-                  <span>{item.name}</span>
+                  <span>{item.displayName}</span>
             </a>
                 </Content>}
               </SwiperSlide>

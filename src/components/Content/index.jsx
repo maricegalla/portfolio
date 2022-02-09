@@ -46,7 +46,7 @@ const Content = () => {
             Graduada em Engenheira Mecânica e MBA em Gestão Empresarial.
             Acredito no poder da transformação através da educação. Sou
             persistente, determinada e busco sempre colaborar com as pessoas ao
-            meu redor. Apaixonada por design, programação e tecnologia.
+            meu redor. Apaixonada pelo universo Star Wars, design, programação e tecnologia.
           </p>
         </div>
       </MainTextContainer>
