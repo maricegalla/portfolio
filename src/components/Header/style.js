@@ -29,7 +29,6 @@ const HeaderContainer = styled.header`
 
   div {
     display: flex;
-    gap: 32px;
   }
 
   @media (max-width: 900px) {

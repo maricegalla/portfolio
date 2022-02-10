@@ -8,7 +8,7 @@ const ProjectsContainer = styled.div`
   font-family: 'Work Sans', sans-serif;
   font-size: 30px;
   margin: 0 100px;
-  width: 80%;
+  width: 60%;
   box-sizing: border-box;
 
   & > h1 {
@@ -16,7 +16,19 @@ const ProjectsContainer = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 900px) {
+  @media (min-width: 901px) and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media (min-width: 501px) and (max-width: 900px) {
+    width: 70%;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 500px) {
     width: 90%;
 
     h1 {
@@ -27,36 +39,54 @@ const ProjectsContainer = styled.div`
 
 const SwiperContainer = styled.div`
   display: flex;
-  width: 70%;
+  width: 100%;
+  margin-top: -50px;
 
-  @media (max-width: 900px) {
+  .swiper-slide {
+    height: 450px !important;
+  }
+
+  .swiper-button-prev {
+    &:after {
+      position: absolute;
+    }
+  }
+
+  .swiper-button-next {
+    &:after {
+      position: absolute;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  @media (max-width: 800px) {
     width: 100%;
 
     .swiper-slide {
-      height: 200px !important;
-    }
-
-    .swiper-button-prev,
-    .swiper-container-rtl .swiper-button-next {
-      left: -10px !important;
-    }
-
-    .swiper-button-next,
-    .swiper-container-rtl .swiper-button-prev {
-      right: -10px !important;
+      height: 240px !important;
     }
 
     .swiper-button-prev::after,
     .swiper-button-next::after {
       font-size: 12px !important;
-    }
-  }
-
-  @media (min-width: 901px) and (max-width: 1100px) {
-    width: 100%;
-
-    .swiper-slide {
-      height: fit-content;
     }
   }
 
@@ -103,39 +133,6 @@ const SwiperContainer = styled.div`
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
     }
-  }
-
-  .swiper-button-prev {
-    &:after {
-      position: relative;
-      left: -1px;
-    }
-  }
-
-  .swiper-button-next {
-    &:after {
-      position: relative;
-      left: 1px;
-    }
-  }
-
-  .swiper-button-prev,
-  .swiper-container-rtl .swiper-button-next {
-    left: 10px;
-    right: auto;
-  }
-
-  .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
-    right: 10px;
-    left: auto;
-  }
-
-  .swiper-button-prev.swiper-button-disabled,
-  .swiper-button-next.swiper-button-disabled {
-    opacity: 0;
-    cursor: auto;
-    pointer-events: none;
   }
 `;
 

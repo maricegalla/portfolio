@@ -59,7 +59,7 @@ const MainTextContainer = styled.div`
     display: flex;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,7 +143,7 @@ const EducationContainer = styled.div`
 
   .paragraph {
     margin: 0;
-    text-align: justify;
+    text-align: left;
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -151,7 +151,7 @@ const EducationContainer = styled.div`
 
   .small {
     margin: 0;
-    text-align: justify;
+    text-align: left;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
   }
@@ -171,7 +171,7 @@ const EducationContainer = styled.div`
   }
 
   @media (max-width: 900px) {
-    width: 85%;
+    width: 60%;
     gap: 20px;
     margin: 0;
 

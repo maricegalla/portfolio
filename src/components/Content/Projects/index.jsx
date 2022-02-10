@@ -40,7 +40,7 @@ const Projects = () => {
         >
           {projects.map((item, index) => (
             <SwiperSlide >
-              {width >= 900 ? 
+              {width >= 800 ? 
                 <Content image={item.images[0].resolutions.mobile.url}>
                 <a
                   href={item.githubUrl}

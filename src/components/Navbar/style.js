@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const NavBarContainer = styled.nav`
   display: flex;
-  gap: 20px;
+  gap: 10px;
 
   & > div {
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
 
   p {

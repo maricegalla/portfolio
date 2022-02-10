@@ -70,7 +70,7 @@ const ExperienceContainer = styled.div`
 
   @media only screen and (max-width: 1169px) {
     .vertical-timeline {
-      width: 100%;
+      width: 80%;
     }
 
     .vertical-timeline-element-icon {

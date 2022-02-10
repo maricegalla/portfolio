@@ -9,10 +9,10 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      {width <= 800 ? <SocialMedia /> : ''}
+      {width <= 900 ? <SocialMedia /> : ''}
       <div>
         <p>Idealizado e criado por Marília Cegalla Aldrighi</p>
-        {width > 800 ? <TopButton /> : ''}
+        {width > 900 ? <TopButton /> : ''}
       </div>
     </FooterContainer>
   );

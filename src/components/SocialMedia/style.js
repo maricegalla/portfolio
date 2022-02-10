@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const SocialMediaContainer = styled.div`
   display: flex;
-  gap: 20px;
-  height: 48px;
+  gap: 10px;
+  height: 40px;
 
   a {
     display: flex;
@@ -14,7 +14,7 @@ const SocialMediaContainer = styled.div`
   }
   
   img {
-    height: 48px;
+    height: 40px;
     fill: #127890;
   }
 `;
