@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import myPicture from 'src/assets/myPicture.jpg';
+import myPicture from 'src/assets/myPicture.png';
 
 const ContentContainer = styled.div`
   background-color: #0e1821;
