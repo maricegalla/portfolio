@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.12f6344a.chunk.css",
-    "main.js": "/portfolio/static/js/main.5f7b05b1.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5f7b05b1.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.903abbbc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.903abbbc.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d599fad8.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d599fad8.js.map",
     "static/css/2.1c3aa175.chunk.css": "/portfolio/static/css/2.1c3aa175.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/discordLogo.d437d824.png": "/portfolio/static/media/discordLogo.d437d824.png",
     "static/media/mackenzieLogo.db22c187.jpg": "/portfolio/static/media/mackenzieLogo.db22c187.jpg",
     "static/media/mondayLogo.06cf42d0.png": "/portfolio/static/media/mondayLogo.06cf42d0.png",
-    "static/media/myPicture.37aa0915.jpg": "/portfolio/static/media/myPicture.37aa0915.jpg",
+    "static/media/myPicture.b4068265.png": "/portfolio/static/media/myPicture.b4068265.png",
     "static/media/powerBiLogo.fc99f0ae.png": "/portfolio/static/media/powerBiLogo.fc99f0ae.png",
     "static/media/resume.4786befb.svg": "/portfolio/static/media/resume.4786befb.svg",
     "static/media/styledLogo.186b514d.png": "/portfolio/static/media/styledLogo.186b514d.png",
@@ -29,6 +29,6 @@
     "static/css/2.1c3aa175.chunk.css",
     "static/js/2.89517b6e.chunk.js",
     "static/css/main.12f6344a.chunk.css",
-    "static/js/main.5f7b05b1.chunk.js"
+    "static/js/main.903abbbc.chunk.js"
   ]
 }
