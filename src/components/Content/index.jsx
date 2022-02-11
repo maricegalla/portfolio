@@ -7,7 +7,7 @@ import {
 } from './style';
 import Habilities from './Habilities';
 import Experiences from './Experiences';
-import ContactForm from './Contact'
+import ContactForm from './Contact';
 import { education } from 'src/helpers/education.js';
 import useViewport from 'src/hooks/useViewport';
 import Name from 'src/components/Name';
@@ -43,10 +43,11 @@ const Content = () => {
           {width > 900 ? <Name /> : ''}
           <span className="typewriter">Desenvolvedora Full Stack</span>
           <p>
-            Graduada em Engenheira Mecânica e MBA em Gestão Empresarial.
-            Acredito no poder da transformação através da educação. Sou
-            persistente, determinada e busco sempre colaborar com as pessoas ao
-            meu redor. Apaixonada pelo universo Star Wars, design, programação e tecnologia.
+            Graduada em Engenheira Mecânica, MBA em Gestão Empresarial e
+             Web Full Stack na Trybe. Acredito no poder da
+            transformação através da educação. Sou persistente, determinada e
+            busco sempre colaborar com as pessoas ao meu redor. Apaixonada pelo
+            universo Star Wars, design, programação e tecnologia.
           </p>
         </div>
       </MainTextContainer>
