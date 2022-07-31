@@ -19,6 +19,7 @@ const Habilities = () => {
         <i className="devicon-css3-plain colored" />
         <i className="devicon-javascript-plain colored" />
         <i className="devicon-typescript-plain colored" />
+        <i class="devicon-vuejs-plain colored" />
         <i className="devicon-bootstrap-plain colored" />
         <i className="devicon-bulma-plain colored" />
         <img src={styledLogo} alt="styled" />
@@ -42,6 +43,7 @@ const Habilities = () => {
         <img src={discordLogo} alt="discord" />
         <img src={mondayLogo} alt="monday" />
         <img src={trelloLogo} alt="monday" />
+        <i className="devicon-jira-plain colored" />
       </div>
     </HabilitiesContainer>
   );

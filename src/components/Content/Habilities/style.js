@@ -27,16 +27,6 @@ const HabilitiesContainer = styled.div`
     & > img {
       height: 80px;
     }
-
-    & > img:hover {
-      transform: scale(1.3);
-      transition: transform 0.5s ease-in-out;
-    }
-
-    & > i:hover {
-      transform: scale(1.3);
-      transition: transform 0.5s ease-in-out;
-    }
   }
 
   @media (max-width: 900px) {
