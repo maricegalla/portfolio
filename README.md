@@ -21,13 +21,13 @@ Abra o diretório do projeto
 Instale as dependências do projeto
 
 ```bash
-  npm install
+  yarn
 ```
 
 Inicie a Aplicação
 
 ```bash
-  npm start
+  yarn start
 ```
 
 ## Stack utilizada
