@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.12f6344a.chunk.css",
-    "main.js": "/portfolio/static/js/main.9027cc12.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9027cc12.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.ff6f7ad6.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.ff6f7ad6.js.map",
-    "static/css/2.955958f5.chunk.css": "/portfolio/static/css/2.955958f5.chunk.css",
-    "static/js/2.91a9bd0a.chunk.js": "/portfolio/static/js/2.91a9bd0a.chunk.js",
-    "static/js/2.91a9bd0a.chunk.js.map": "/portfolio/static/js/2.91a9bd0a.chunk.js.map",
-    "static/js/3.e7641dbc.chunk.js": "/portfolio/static/js/3.e7641dbc.chunk.js",
-    "static/js/3.e7641dbc.chunk.js.map": "/portfolio/static/js/3.e7641dbc.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.b3e2e12b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b3e2e12b.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.8cace69b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8cace69b.js.map",
+    "static/css/2.a01f957f.chunk.css": "/portfolio/static/css/2.a01f957f.chunk.css",
+    "static/js/2.f9201939.chunk.js": "/portfolio/static/js/2.f9201939.chunk.js",
+    "static/js/2.f9201939.chunk.js.map": "/portfolio/static/js/2.f9201939.chunk.js.map",
+    "static/js/3.841c45a0.chunk.js": "/portfolio/static/js/3.841c45a0.chunk.js",
+    "static/js/3.841c45a0.chunk.js.map": "/portfolio/static/js/3.841c45a0.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/2.955958f5.chunk.css.map": "/portfolio/static/css/2.955958f5.chunk.css.map",
+    "static/css/2.a01f957f.chunk.css.map": "/portfolio/static/css/2.a01f957f.chunk.css.map",
     "static/css/main.12f6344a.chunk.css.map": "/portfolio/static/css/main.12f6344a.chunk.css.map",
-    "static/js/2.91a9bd0a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.91a9bd0a.chunk.js.LICENSE.txt",
+    "static/js/2.f9201939.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f9201939.chunk.js.LICENSE.txt",
     "static/media/404 Error-pana.cc5cf417.svg": "/portfolio/static/media/404 Error-pana.cc5cf417.svg",
     "static/media/discordLogo.d437d824.png": "/portfolio/static/media/discordLogo.d437d824.png",
     "static/media/mackenzieLogo.db22c187.jpg": "/portfolio/static/media/mackenzieLogo.db22c187.jpg",
@@ -25,10 +25,10 @@
     "static/media/trelloLogo.6e9db7c4.png": "/portfolio/static/media/trelloLogo.6e9db7c4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff6f7ad6.js",
-    "static/css/2.955958f5.chunk.css",
-    "static/js/2.91a9bd0a.chunk.js",
+    "static/js/runtime-main.8cace69b.js",
+    "static/css/2.a01f957f.chunk.css",
+    "static/js/2.f9201939.chunk.js",
     "static/css/main.12f6344a.chunk.css",
-    "static/js/main.9027cc12.chunk.js"
+    "static/js/main.b3e2e12b.chunk.js"
   ]
 }
