@@ -44,8 +44,7 @@ const Content = () => {
           <span className="typewriter">Desenvolvedora Full Stack</span>
           <p>
             Graduada em Engenheira Mecânica, MBA em Gestão Empresarial e
-             Web Full Stack na Trybe. Acredito no poder da
-            transformação através da educação. Sou persistente, determinada e
+             Web Full Stack na Trybe. Sou persistente, determinada e
             busco sempre colaborar com as pessoas ao meu redor. Apaixonada pelo
             universo Star Wars, design, programação e tecnologia.
           </p>
