@@ -1,0 +1,12 @@
+.tippy-box[data-theme~=custom]{
+  background: #127890;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.tippy-box[data-theme~=custom][data-placement^=top]>.tippy-arrow:before{border-top-color:#127890}
+.tippy-box[data-theme~=custom][data-placement^=bottom]>.tippy-arrow:before{border-bottom-color:#127890}
+.tippy-box[data-theme~=custom][data-placement^=left]>.tippy-arrow:before{border-left-color:#127890}
+.tippy-box[data-theme~=custom][data-placement^=right]>.tippy-arrow:before{border-right-color:#127890}
+.tippy-box[data-theme~=custom]>.tippy-backdrop{background: #127890;}.tippy-box[data-theme~=custom]>.tippy-svg-arrow{fill:#127890;}
