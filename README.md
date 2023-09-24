@@ -36,8 +36,9 @@ Inicie a Aplicação
 
 ## Screenshot
 
-![Captura de tela de 2022-02-02 10-49-19](https://user-images.githubusercontent.com/76533793/152166595-33c88756-3d95-4805-8114-f1e3cd4d8b6d.png)
+![Captura de tela de 2023-09-24 12-30-55](https://github.com/maricegalla/portfolio/assets/76533793/fc3c6a1c-73ce-402a-9958-76183bf8c38d)
 
 ## Deploy
 
 A aplicação está diponível na seguinte URL: https://maricegalla.github.io/portfolio/
+
